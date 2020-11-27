@@ -15,12 +15,12 @@ const addingErrors = (text, index) => {
     formLabels[index].innerHTML = text;
 }
 
-/*document.getElementsByTagName("BODY")[0].onresize = () => {
+document.getElementsByTagName("BODY")[0].onresize = () => {
     for(let index = 0; index < errorImgs.length; ++index) {
         errorImgs[index].style.left = inputs[index].getBoundingClientRect().x + inputs[index].getBoundingClientRect().width - 50 + "px";
         errorImgs[index].style.top = inputs[index].getBoundingClientRect().y + inputs[index].getBoundingClientRect().height - 40 + "px";
     }
-}*/
+}
 
 
 btnSubmit.addEventListener('click', () => {
