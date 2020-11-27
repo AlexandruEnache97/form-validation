@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: hsl(0, 100%, 74%) ;   
+    background-image: url('./images/bg-intro-desktop.png'); 
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 115px;
+    margin: 50px;
+    width: 50%;
+}
+
+.leftContainer p:first-child {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    line-height: 52px;
+    margin-bottom: 42px;
+}
+
+.leftContainer p:last-child {
+    font-size: 16px;
+    color: white;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin-right:  125px;
+    margin-top: 60px;
+}
+
+.rightContainer > a{
+    text-decoration: none;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    justify-content: center;
+    padding: 20px 112px;
+    border-radius: 14px;
+    box-shadow: 0px 8px rgba(0,0,0,0.2);
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.rightContainer > a span {
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.rightContainer .formContainer {
+    background-color: white;
+    border-radius: 14px;
+    margin: 16px 0px;
+    padding: 40px 0px 0px 0px;
+    box-shadow: 0px 10px rgba(0,0,0,0.1);
+    width: 540px;
+}
+
+
+.rightContainer form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightContainer form input[type="text"], .rightContainer form input[type="password"] {
+    height: 56px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 2px solid  hsl(246, 25%, 77%);
+    border-radius: 4px;
+    text-indent: 26px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.rightContainer form input[type="text"]:focus, .rightContainer form input[type="password"]:focus {
+    border: 2px solid  hsl(249, 10%, 26%);
+    color: hsl(249, 10%, 26%);
+}
+
+
+.rightContainer form .button {
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0px 5px #31B87D;
+    text-indent: 0;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    height: 50px;
+    width: 80%;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+.rightContainer form .button:hover {
+    opacity: 0.7;
+}
+
+.rightContainer form label:last-child {
+    font-size:  10px;
+    font-weight: 400;
+    margin-bottom: 46px;
+    font-weight: 600;
+    color:hsl(246, 25%, 77%);
+}
+
+.rightContainer form a {
+    color: hsl(0, 100%, 74%) ;
+}
+
+.rightContainer form .textForm {
+    display: none;
+    font-size:  10px;
+    font-weight: 400;
+    font-weight: 600;
+    color:hsl(0, 100%, 74%);
+    height: 10px;
+    margin-bottom: 24px;
+    justify-content: flex-end;
+    margin-left: 250px;
+}
+
+.rightContainer .formContainer .errorImg {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 80px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    width: 100%;
+    margin-top: 70px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 1200px) {
+    body {   
+        background-image: url('./images/bg-intro-mobile.png'); 
+        width: 100vw;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .leftContainer {
+        flex-direction: column;
+        padding-left: 0px;
+        text-align: center;
+        margin: 10px;
+        width: 320px;
+    }
+
+    .leftContainer p:first-child {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 90px;
+    }
+
+    .leftContainer p:last-child {
+        font-size: 14px;
+        margin: 0px 0px 60px 0px; 
+    }
+
+    .rightContainer {
+        width: 100vw;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .rightContainer > a {   
+        margin: 0px;
+        height: 85px;
+        margin: 0px 16px;
+        padding: 16px 10px;
+        width: 340px;
+    } 
+
+    .rightContainer .formContainer {
+        width: 340px;
+    }
+
+    .rightContainer form label:last-child {
+        margin: 0px 60px 26px 60px;
+        text-align: center;
+    }
+
+    .attribution {
+        margin-top: 0px;
+    }
+
+    .rightContainer form .textForm {
+        margin-left: 100px;
+    }
+}
